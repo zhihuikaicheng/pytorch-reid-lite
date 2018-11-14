@@ -158,7 +158,7 @@ def run_eval(config):
         batch_size = config["batch_size"]
 
     # configure data_loader
-    msmt_root = "/world/data-c7/person-reid-data/MSMT17_V1/test"
+    msmt_root = "/world/data-gpu-94/sysu-reid/person-reid-data/MSMT17_V1/test"
     dataloaders = {
         x: MSMTDataLoader(
             os.path.join(msmt_root, x), batch_size=batch_size,
